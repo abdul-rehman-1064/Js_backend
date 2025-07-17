@@ -2,14 +2,18 @@
   "name": "backendjs",
   "version": "1.0.0",
   "description": "Backend Series on Youtube",
+  "type": "module",
   "keywords": [
     "javaScript"
   ],
   "license": "ISC",
   "author": "Abdul Rehman",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
