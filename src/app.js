@@ -19,4 +19,14 @@ app.use(express.static("public"))
 // cookieParser use to set cookies between my server and users browser ->secure cookies --- (Only server will put and delete cookies)
 app.use(cookieParser())
 
+
+// Routes import
+
+import userRouter from './routes/user.routes.js'
+
+//Routes Declaration
+
+app.use("/api/v1/users",userRouter)
+
+
 export { app }
